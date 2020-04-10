@@ -1796,6 +1796,48 @@ Description: Substrate substitute for code substitution
 Author: comex <comexk+da@gmail.com>
 Name: Substitute
 
+Package: com.ex.substitute
+Version: 0.1.7
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 1752
+Pre-Depends: coreutils-bin, dpkg (>=1.17.11)
+Depends: firmware (>= 8.0), cy+cpu.arm64, com.saurik.substrate.safemode, uikittools (>=1.1.13-4), darwintools
+Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject, science.xnu.substitute, mobilesubstrate
+Replaces: com.ex.libsubstitute, org.coolstar.tweakinject, mobilesubstrate
+Provides: com.ex.libsubstitute, mobilesubstrate (= 0.9.7033+dummy)
+Filename: ./debs/com.ex.substitute_0.1.7_iphoneos-arm.deb
+Size: 377634
+MD5sum: a8ae6033884450ff3ba5f6226f4cda29
+SHA1: 63bd33b476d26da068f1c61ab07eb847f2b4ec1f
+SHA256: cd0ec515390cfc3a982b8631fa8b063a31c052f2cbf750328314e252afbe0567
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
+Package: com.ex.substitute
+Version: 0.1.8
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 1540
+Pre-Depends: coreutils-bin, dpkg (>=1.17.11)
+Depends: firmware (>= 8.0), cy+cpu.arm64, com.saurik.substrate.safemode, uikittools (>=1.1.13-4), darwintools
+Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject, science.xnu.substitute, mobilesubstrate
+Replaces: com.ex.libsubstitute, org.coolstar.tweakinject, mobilesubstrate
+Provides: com.ex.libsubstitute, mobilesubstrate (= 0.9.7033+dummy)
+Filename: ./debs/com.ex.substitute_0.1.8_iphoneos-arm.deb
+Size: 354384
+MD5sum: 4157c18da3c30381f7fcf5cfc8073fd7
+SHA1: b7aa4c800d848596f87fc13b20f84020b9b65c0b
+SHA256: 620d1e8738f2cbcf9528db09406e9a85802d01cfe458a4032a93368ce764335e
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
 Package: com.saurik.substrate
 Version: 1:0
 Architecture: iphoneos-arm
@@ -2183,6 +2225,30 @@ Tag: purpose::daemon, role::developer
 Author: Jay Freeman (saurik) <saurik@saurik.com>
 Depiction: http://cydia.saurik.com/info/cycript/
 Name: Cycript
+
+Package: cydia
+Version: 1.1.32
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 6472
+Pre-Depends: debianutils, dpkg (>= 1.16.1), firmware (>=5.0)
+Depends: cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.19.1), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.14), xz
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Filename: ./debs/cydia_1.1.32_iphoneos-arm.deb
+Size: 1259688
+MD5sum: 09a77c97a167dca63559e777f2a5a230
+SHA1: d79894ec951babd7a39dff7e0eced8fd3a1cdc09
+SHA256: e1a8424f1dd663eb2322452fdab86d0ac47a16d6107e4da4913b9fd92189e40b
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Icon: file:///Applications/Cydia.app/Icon-60.png
+Name: Cydia Installer
 
 Package: cydia
 Version: 1.1.32~b1
