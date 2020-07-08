@@ -1713,6 +1713,69 @@ Author: comex <comexk+da@gmail.com>
 Name: Substitute
 
 Package: com.ex.substitute
+Version: 0.1.12
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 1608
+Pre-Depends: coreutils-bin, dpkg (>=1.17.11)
+Depends: firmware (>= 8.0), cy+cpu.arm64, com.saurik.substrate.safemode, uikittools (>=1.1.13-4), darwintools
+Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject, science.xnu.substitute, mobilesubstrate
+Replaces: com.ex.libsubstitute, org.coolstar.tweakinject, mobilesubstrate
+Provides: com.ex.libsubstitute, mobilesubstrate (= 0.9.7033+dummy)
+Filename: ./debs/com.ex.substitute_0.1.12_iphoneos-arm.deb
+Size: 402266
+MD5sum: 17a12b1165b2ce4c9a0bf04cb27edf2b
+SHA1: 8c027f2ffb79f3c64ff21c35c119f839f9b98e65
+SHA256: ab84e920bd0c4f52e9ebb40d258dd1c86bdd4cb831d44f78b547ce71f3262038
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
+Package: com.ex.substitute
+Version: 0.1.13
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 4176
+Pre-Depends: coreutils-bin, dpkg (>=1.17.11)
+Depends: firmware (>= 8.0), cy+cpu.arm64, com.saurik.substrate.safemode, uikittools (>=1.1.13-4), darwintools
+Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject, science.xnu.substitute, mobilesubstrate
+Replaces: com.ex.libsubstitute, org.coolstar.tweakinject, mobilesubstrate
+Provides: com.ex.libsubstitute, mobilesubstrate (= 0.9.7033+dummy)
+Filename: ./debs/com.ex.substitute_0.1.13_iphoneos-arm.deb
+Size: 993118
+MD5sum: f2f6d751ec815a774988e4a7cba9f470
+SHA1: 4bfd62e93a6169fdc551a8d231a22bcc33018d04
+SHA256: 362f4c84dce39c5587708a8788ceebe147e74c71fea838554537a595082352ab
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
+Package: com.ex.substitute
+Version: 0.1.14
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 4384
+Pre-Depends: coreutils-bin, dpkg (>=1.17.11)
+Depends: firmware (>= 8.0), cy+cpu.arm64, com.saurik.substrate.safemode, uikittools (>=1.1.13-4), darwintools
+Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject, science.xnu.substitute, mobilesubstrate
+Replaces: com.ex.libsubstitute, org.coolstar.tweakinject, mobilesubstrate
+Provides: com.ex.libsubstitute, mobilesubstrate (= 0.9.7033+dummy)
+Filename: ./debs/com.ex.substitute_0.1.14_iphoneos-arm.deb
+Size: 1071648
+MD5sum: b83d10a1be1c5303f20d38e66f74ec7f
+SHA1: 0657ae23ca81dfde6734ea20dfcf8ce10b671c79
+SHA256: 3320fb97ea7da661f4b1b354be5c0f4ebe4520cc3344d9d1662cd0a0d8ebdd40
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
+Package: com.ex.substitute
 Version: 0.1.2
 Architecture: iphoneos-arm
 Maintainer: Sam Bingner
@@ -1832,6 +1895,27 @@ Size: 354384
 MD5sum: 4157c18da3c30381f7fcf5cfc8073fd7
 SHA1: b7aa4c800d848596f87fc13b20f84020b9b65c0b
 SHA256: 620d1e8738f2cbcf9528db09406e9a85802d01cfe458a4032a93368ce764335e
+Section: System
+Priority: optional
+Description: Substrate substitute for code substitution
+Author: comex <comexk+da@gmail.com>
+Name: Substitute
+
+Package: com.ex.substitute
+Version: 0.1.9
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner
+Installed-Size: 1556
+Pre-Depends: coreutils-bin, dpkg (>=1.17.11)
+Depends: firmware (>= 8.0), cy+cpu.arm64, com.saurik.substrate.safemode, uikittools (>=1.1.13-4), darwintools
+Conflicts: com.ex.libsubstitute, org.coolstar.tweakinject, science.xnu.substitute, mobilesubstrate
+Replaces: com.ex.libsubstitute, org.coolstar.tweakinject, mobilesubstrate
+Provides: com.ex.libsubstitute, mobilesubstrate (= 0.9.7033+dummy)
+Filename: ./debs/com.ex.substitute_0.1.9_iphoneos-arm.deb
+Size: 365668
+MD5sum: a5453a044f61a3877f66728db36d0867
+SHA1: bc2063149e51600daea6d4a8243848bb53cad398
+SHA256: 744073e4cb258b426a18bcf8f81abdbec08a2793987db4a557e73dd3fea3ea59
 Section: System
 Priority: optional
 Description: Substrate substitute for code substitution
@@ -2673,6 +2757,78 @@ Size: 1260488
 MD5sum: 63c7db11ac377655eec249bb631c2bce
 SHA1: dfaae53ac16668d17bd6bc9d57886cda5fafe110
 SHA256: 8f55f9c0791724a1d585f3ae7130b533105ad96e52305fbb8e3e9070616696c7
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Icon: file:///Applications/Cydia.app/Icon-60.png
+Name: Cydia Installer
+
+Package: cydia
+Version: 1.1.34
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 6472
+Pre-Depends: debianutils, dpkg (>= 1.16.1), firmware (>=5.0)
+Depends: cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.19.1), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.14), xz
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Filename: ./debs/cydia_1.1.34_iphoneos-arm.deb
+Size: 1260386
+MD5sum: dcdee98874bd04a97972749cae558a75
+SHA1: 641bd1b5e1b62ddfe8f9d0236069a692b7ad5c53
+SHA256: 8537399adf33a284ecfe08008f70c6f2e4c5eeb72c32a3de7df86ee9420c194d
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Icon: file:///Applications/Cydia.app/Icon-60.png
+Name: Cydia Installer
+
+Package: cydia
+Version: 1.1.35
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 6472
+Pre-Depends: debianutils, dpkg (>= 1.16.1), firmware (>=5.0)
+Depends: cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.19.1), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.14), xz
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Filename: ./debs/cydia_1.1.35_iphoneos-arm.deb
+Size: 1260554
+MD5sum: 23d69648612cd0a9af2d893aae47b062
+SHA1: fcb4d9ab385ce61d420b56ce4025c22c2a243579
+SHA256: 4cf268be1bf1395dc9bf645a55c24a17ba35867175aed8241c8ccd112ea4e2c3
+Section: Packaging
+Priority: required
+Description: graphical iPhone front-end for APT
+Tag: purpose::uikit, cydia::essential, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/cydia/
+Icon: file:///Applications/Cydia.app/Icon-60.png
+Name: Cydia Installer
+
+Package: cydia
+Version: 1.1.36
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 6472
+Pre-Depends: debianutils, dpkg (>= 1.16.1), firmware (>=5.0)
+Depends: cydia-lproj (>= 1.1.10), darwintools, debianutils, dpkg (>= 1.19.1), org.thebigboss.repo.icons, sed, shell-cmds, system-cmds, uikittools (>= 1.1.14), xz
+Conflicts: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, ste, yellowsn0w.com, zodttd
+Replaces: bigboss, bigbossbetarepo, com.sosiphone.addcydia, cydia-sources, ispazio.net, modmyifone, saurik, ste, yellowsn0w.com, zodttd
+Provides: bigbossbetarepo, cydia-sources
+Filename: ./debs/cydia_1.1.36_iphoneos-arm.deb
+Size: 1260922
+MD5sum: 30cfa894c4c011e66fe06e63d04437c8
+SHA1: 43496edad306221da9c9c9721416abeeca3175ea
+SHA256: 13b8803e376df1eda15338768090df8cd756013d7d616e61749fcf065786c3c3
 Section: Packaging
 Priority: required
 Description: graphical iPhone front-end for APT
@@ -4600,6 +4756,42 @@ Description: pseudo-codesign Mach-O files
 Author: Jay Freeman (saurik) <saurik@saurik.com>
 Name: Link Identity Editor
 
+Package: ldid
+Version: 2:2.1.2+g5420cb5-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 464
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libplist (>= 2.0.0), libssl1.1.1, dpkg (>= 1.18.25-9)
+Filename: ./debs/ldid_2_2.1.2+g5420cb5-1_iphoneos-arm.deb
+Size: 51610
+MD5sum: 74302a4a9265923ba95f325dff9a702c
+SHA1: c8ac42dbcb07a81116428c1555a898fdddb6e7d6
+SHA256: 98ff2c568b6ee3522895a5b9ae2a627085029ab5428814f91a29aa02e0243824
+Section: Development
+Priority: optional
+Description: pseudo-codesign Mach-O files
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Name: Link Identity Editor
+
+Package: ldid
+Version: 2:2.1.2+g5420cb5-2
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 464
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libplist (>= 2.0.0), libssl1.1.1, dpkg (>= 1.18.25-9)
+Filename: ./debs/ldid_2_2.1.2+g5420cb5-2_iphoneos-arm.deb
+Size: 52148
+MD5sum: b83b5c7b01ed46d68b2654d8c77fabea
+SHA1: a01962dfd5a957c3586ee12781dc53164c384a44
+SHA256: 1a3f40113f385aa6968349d29f7aaa63322823ea54151662b1bd43d69e4280ab
+Section: Development
+Priority: optional
+Description: pseudo-codesign Mach-O files
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Name: Link Identity Editor
+
 Package: less
 Version: 530-1
 Architecture: iphoneos-arm
@@ -5304,6 +5496,22 @@ Priority: optional
 Homepage: https://c-ares.haxx.se/
 Description: Asynchronous DNS library
 
+Package: libc-ares2
+Version: 1.16.1-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 264
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: ./debs/libc-ares2_1.16.1-1_iphoneos-arm.deb
+Size: 29942
+MD5sum: 3ffe74077fdfa7544b4a407fee990a6d
+SHA1: dae09a056ae45ae278a533bba048810ef037c186
+SHA256: afe16010cd2514a5911fb790e5bef7f6ae22a7b1b16c341527ef69ebf2ff0611
+Section: Development
+Priority: optional
+Homepage: https://c-ares.haxx.se/
+Description: Asynchronous DNS library
+
 Package: libcares-dev
 Version: 1.15.0-1
 Architecture: iphoneos-arm
@@ -5927,6 +6135,25 @@ Size: 53574
 MD5sum: 5cc7cbfd6402934f61454fa47f7f1fe9
 SHA1: 4dc4afabbf7823b38ca34c6ecc782ea165bd046c
 SHA256: d030b9359202c76bd74b218dd7219c5fbf524c41fffa5e1dafce6c03b56c8a29
+Section: Development
+Priority: standard
+Homepage: https://nghttp2.org/
+Description: library implementing HTTP/2 protocol (shared library)
+
+Package: libnghttp2-14
+Version: 1.40.0-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 400
+Pre-Depends: dpkg (>= 1.14.25-8)
+Conflicts: nghttp2, libnghttp2
+Replaces: nghttp2, libnghttp2
+Provides: nghttp2, libnghttp2
+Filename: ./debs/libnghttp2-14_1.40.0-1_iphoneos-arm.deb
+Size: 53522
+MD5sum: 53af07eb4f034bd96aa719f1aac14433
+SHA1: 3af0126e44c0674efa4acc2b2aa220b64099f217
+SHA256: 7c565c5dbcf6b6d76117ea8cbed650ae6630d93d068769ede4f53d96af621a99
 Section: Development
 Priority: standard
 Homepage: https://nghttp2.org/
@@ -7725,6 +7952,27 @@ Size: 2495158
 MD5sum: fe3ab527d79b07951e550ea2cda5b9b3
 SHA1: 9d1dea00a0cad628845394045b8c7fae90c4038d
 SHA256: 727b30b3ce2ab01e020f0f660efc0c1228becb19cd628b7ea94187c3e4244eac
+Section: System
+Priority: optional
+Description: powerful code insertion platform
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/mobilesubstrate/
+Name: Cydia Substrate
+
+Package: mobilesubstrate
+Version: 0.9.7102
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: com.saurik.substrate.safemode
+Conflicts: me.devbug.msreloadfix, com.r3pwn.startsubstrate, com.ragemasta.bootstrap, com.saurik.substrate (<< 1:0)
+Breaks: uikittools (<< 1.1.1), com.mywi4 (<= 5.03.2), com.phoenix.pandoracontrols (<= 1.1.0-1), com.intelliborn.intelliscreenx (<= 1.0.110), com.evad3rs.evasi0n7 (<< 0.2)
+Replaces: cycript (<= 0.9.594), com.saurik.substrate
+Filename: ./debs/mobilesubstrate_0.9.7102_iphoneos-arm.deb
+Size: 2507320
+MD5sum: 46b592d3ca8fd84e5ccf1d1d5e4a44a6
+SHA1: 30e3b304097f16561eea25b7ed4636f7a5420319
+SHA256: 119d988c3e1d9e4ddb859f2d40236d7dbf3fdcf923e459dc9e01264cbf7d2952
 Section: System
 Priority: optional
 Description: powerful code insertion platform
@@ -10005,6 +10253,24 @@ Size: 40998
 MD5sum: 89e0e1bff4aec393b49daf85a428fedc
 SHA1: 13f7e302443b0cffb64539a586c1f2d62fbf99f5
 SHA256: cbb1f7374bf991777ae1ea451e1e12d365f95b29035d1546c11bf27e9a48e48a
+Section: Utilities
+Priority: optional
+Homepage: http://tukaani.org/lzma/
+Description: UIKit/GraphicsServices command line access
+Depiction: http://cydia.saurik.com/info/uikittools/
+Name: UIKit Tools
+
+Package: uikittools
+Version: 1.1.17-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1168
+Depends: coreutils-bin, findutils
+Filename: ./debs/uikittools_1.1.17-1_iphoneos-arm.deb
+Size: 41754
+MD5sum: 1ed5ee008fe074a95b014c6a86eca8e3
+SHA1: 083fb649b0bfbb2adab2ed503beccbf5e380571d
+SHA256: 86d626a6f937472c9c5a440bef6b89d85396a723234b6e9ec03b1060a188137f
 Section: Utilities
 Priority: optional
 Homepage: http://tukaani.org/lzma/
