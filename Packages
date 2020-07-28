@@ -339,6 +339,26 @@ Priority: standard
 Description: repository encryption key management tool
 Name: APT (apt-key)
 
+Package: apt-key
+Version: 1.8.2.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 64
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: coreutils, libapt
+Conflicts: apt7-key (<<1:0)
+Breaks: apt7-key (<<1:0)
+Replaces: apt (<< 1:0-1), apt7 (<< 0.7.20.2-4), apt7-key
+Filename: ./debs/apt-key_1.8.2.1-1_iphoneos-arm.deb
+Size: 8728
+MD5sum: 605fa2abac45b1cb0852182960f891e3
+SHA1: e3becd1b14734bfaf5092e849fe0e1404d485a3e
+SHA256: b40b8fb3717c5fee956fdb6834ac98279c73f40c8cd522c71ebbd0a7f4c4db6c
+Section: Packaging
+Priority: standard
+Description: repository encryption key management tool
+Name: APT (apt-key)
+
 Package: apt-rdepends
 Version: 1.3.0-1
 Architecture: iphoneos-arm
@@ -3938,6 +3958,36 @@ Priority: optional
 Homepage: http://www.gnu.org/software/help2man/
 Description: Automatic manpage generator
 
+Package: hexedit
+Version: 1.4.2.12-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 160
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Filename: ./debs/hexedit_1.4.2.12-1_iphoneos-arm.deb
+Size: 16520
+MD5sum: 87db707842e67881ce1717ba64ea2315
+SHA1: 55c60ca7b1e746ad400f2940f7ab1af36619d7ff
+SHA256: c0db6ea9f8e8d1d9124884d8eda5b3037e7cb8bcd75059506c0d83fd2e624402
+Section: Text_Editors
+Priority: optional
+Homepage: https://github.com/pixel/hexedit
+Description: view and edit files or devices in hexadecimal or ASCII
+ hexedit shows a target both in hexadecimal and in ASCII. This target
+ can be a device or a file. You can edit the target and search through
+ it. There are also copy&paste and save to file functions. Is allowed
+ truncating or appending to the target. All modifications are shown in
+ bold.
+ .
+ hexedit is ideal to edit or inspect very large files or devices, as
+ hard disks or its partitions, flash drives, etc. These elements will
+ not be wholly read because hexedit loads a piece at a time.
+ .
+ hexedit can be used by programmers in several activities. It also is
+ useful for debugging, forensics investigations and recovering from
+ digital disasters.
+
 Package: htop
 Version: 2.2.0-1
 Architecture: iphoneos-arm
@@ -5003,6 +5053,26 @@ Priority: required
 Description: the advanced packaging library from Debian
 Name: APT Strict (lib)
 
+Package: libapt
+Version: 1.8.2.1-1
+Architecture: iphoneos-arm
+Essential: yes
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 3616
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: bzip2, dpkg (>= 1.14.25-9), gnupg, gzip, lz4, lzma, xz, libapt-pkg5.0 (>= 1.8.2.1), gnutls
+Conflicts: apt7-lib (<<1:0), apt7 (<<1:0), apt7-key (<<1:0), com.mc.xz
+Breaks: cydia (<< 1.1.10), aptitude (<< 0.4.11.11-6), apt7-lib (<< 1:0)
+Filename: ./debs/libapt_1.8.2.1-1_iphoneos-arm.deb
+Size: 302840
+MD5sum: b6d317427a7176e7dc50b7421d3d5c56
+SHA1: e84dcde6e597f177486bd6ffe43b653abd8fb170
+SHA256: 0b1fa3904b47c374ba2acd826068717a444649b6358bd7ac60c0096593bedafe
+Section: Packaging
+Priority: required
+Description: the advanced packaging library from Debian
+Name: APT (lib)
+
 Package: libapt-dev
 Version: 1.4.8-1
 Architecture: iphoneos-arm
@@ -5087,6 +5157,23 @@ Size: 100696
 MD5sum: 7796a19e3fc9342d0351ff38a91b1481
 SHA1: a0d39e086e5a2a13a80e3b3c6cd04a5c7ad4960c
 SHA256: 66e1d75b606c02c2ce2e37a8bfa85da2961e05ab961b704090308565957ad3af
+Section: Packaging
+Priority: optional
+Description: development files for APT's libapt-pkg and libapt-inst
+Name: APT Development (libapt-pkg-dev)
+
+Package: libapt-pkg-dev
+Version: 1.8.2.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1376
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libapt-pkg5.0
+Filename: ./debs/libapt-pkg-dev_1.8.2.1-1_iphoneos-arm.deb
+Size: 100748
+MD5sum: 3f1712964701580b3f018305a55e217c
+SHA1: 984cc09ce83be1c7cbc2c6153dfa6998c2c0e0b7
+SHA256: 3d75e7be170adbeda28ceb2339b09ab1ac02a2baa979e369f414260b6123fb68
 Section: Packaging
 Priority: optional
 Description: development files for APT's libapt-pkg and libapt-inst
@@ -5217,6 +5304,25 @@ Size: 535296
 MD5sum: f3e55f8dd45353f4e24b7de8e9b1a29b
 SHA1: 1d3e0f6903ba9a437c1640929effde171ea22d12
 SHA256: 6265ffa8ef38b9ad132b2a5b8c501e07c7a66e473c6e8600f51620f88bfceb53
+Section: Packaging
+Priority: required
+Description: the advanced packaging library from Debian
+Name: APT (libapt-pkg)
+
+Package: libapt-pkg5.0
+Version: 1.8.2.1-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 3416
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: bzip2, lz4, lzma, xz
+Conflicts: apt7-lib (<<1:0), com.mc.xz (<<5.2.4-7)
+Provides: libapt-pkg (=1.8.2.1)
+Filename: ./debs/libapt-pkg5.0_1.8.2.1-1_iphoneos-arm.deb
+Size: 535322
+MD5sum: 13d537fa6827230787583b928e32b600
+SHA1: 359ba45d3e1131897e179f63d24f14e58dbe546a
+SHA256: aa38b836c298c8e67429d02af39f109acec410ec3f2cf9ea08a6c5412644cb84
 Section: Packaging
 Priority: required
 Description: the advanced packaging library from Debian
@@ -7980,6 +8086,111 @@ Author: Jay Freeman (saurik) <saurik@saurik.com>
 Depiction: http://cydia.saurik.com/info/mobilesubstrate/
 Name: Cydia Substrate
 
+Package: mobilesubstrate
+Version: 0.9.7103
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: com.saurik.substrate.safemode
+Conflicts: me.devbug.msreloadfix, com.r3pwn.startsubstrate, com.ragemasta.bootstrap, com.saurik.substrate (<< 1:0)
+Breaks: uikittools (<< 1.1.1), com.mywi4 (<= 5.03.2), com.phoenix.pandoracontrols (<= 1.1.0-1), com.intelliborn.intelliscreenx (<= 1.0.110), com.evad3rs.evasi0n7 (<< 0.2)
+Replaces: cycript (<= 0.9.594), com.saurik.substrate
+Filename: ./debs/mobilesubstrate_0.9.7103_iphoneos-arm.deb
+Size: 2492704
+MD5sum: 40a43d6e5be48ddbb89e4d0d500aa603
+SHA1: 9539205077a1cb96fac68d20b40fc42676aa21f8
+SHA256: 8fc4789eefd59be2edd7f84ee9afe940be97f9172cdde9e81855b5363c8ffb67
+Section: System
+Priority: optional
+Description: powerful code insertion platform
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/mobilesubstrate/
+Name: Cydia Substrate
+
+Package: mobilesubstrate
+Version: 0.9.7104
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: com.saurik.substrate.safemode
+Conflicts: me.devbug.msreloadfix, com.r3pwn.startsubstrate, com.ragemasta.bootstrap, com.saurik.substrate (<< 1:0)
+Breaks: uikittools (<< 1.1.1), com.mywi4 (<= 5.03.2), com.phoenix.pandoracontrols (<= 1.1.0-1), com.intelliborn.intelliscreenx (<= 1.0.110), com.evad3rs.evasi0n7 (<< 0.2)
+Replaces: cycript (<= 0.9.594), com.saurik.substrate
+Filename: ./debs/mobilesubstrate_0.9.7104_iphoneos-arm.deb
+Size: 2514944
+MD5sum: 50ea10bb79ae7c3598c602dc7d2bd277
+SHA1: 0d054920991600906e9876b3c54e64663a5172ff
+SHA256: 47388a26a6bb8629f55de75dda57d3ca78d75d02e5f0143a419e6504c24e3143
+Section: System
+Priority: optional
+Description: powerful code insertion platform
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/mobilesubstrate/
+Name: Cydia Substrate
+
+Package: mobilesubstrate
+Version: 0.9.7105
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: com.saurik.substrate.safemode
+Conflicts: me.devbug.msreloadfix, com.r3pwn.startsubstrate, com.ragemasta.bootstrap, com.saurik.substrate (<< 1:0)
+Breaks: uikittools (<< 1.1.1), com.mywi4 (<= 5.03.2), com.phoenix.pandoracontrols (<= 1.1.0-1), com.intelliborn.intelliscreenx (<= 1.0.110), com.evad3rs.evasi0n7 (<< 0.2)
+Replaces: cycript (<= 0.9.594), com.saurik.substrate
+Filename: ./debs/mobilesubstrate_0.9.7105_iphoneos-arm.deb
+Size: 2525522
+MD5sum: f04baa2e9f2f18d79a3612d2c6e9689c
+SHA1: c3708f53facd8db0354d95cfeabec6acc7961785
+SHA256: a84908026204620987dcab216ad933359f8e32fc06e8104b2dada547c3c08b24
+Section: System
+Priority: optional
+Description: powerful code insertion platform
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/mobilesubstrate/
+Name: Cydia Substrate
+
+Package: mobilesubstrate
+Version: 0.9.7106
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: com.saurik.substrate.safemode
+Conflicts: me.devbug.msreloadfix, com.r3pwn.startsubstrate, com.ragemasta.bootstrap, com.saurik.substrate (<< 1:0)
+Breaks: uikittools (<< 1.1.1), com.mywi4 (<= 5.03.2), com.phoenix.pandoracontrols (<= 1.1.0-1), com.intelliborn.intelliscreenx (<= 1.0.110), com.evad3rs.evasi0n7 (<< 0.2)
+Replaces: cycript (<= 0.9.594), com.saurik.substrate
+Filename: ./debs/mobilesubstrate_0.9.7106_iphoneos-arm.deb
+Size: 2529124
+MD5sum: 96a9e754f0dc8b86608b4a6a2205be50
+SHA1: bce7b13da3d28dad0b9ae1d102ed1475283b9832
+SHA256: 895fd5c4c37f0f5f86ec51a6e5a3e3cb4eaaa6e95a249e8eb5f20ee7648c465b
+Section: System
+Priority: optional
+Description: powerful code insertion platform
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/mobilesubstrate/
+Name: Cydia Substrate
+
+Package: mobilesubstrate
+Version: 0.9.7107
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: com.saurik.substrate.safemode
+Conflicts: me.devbug.msreloadfix, com.r3pwn.startsubstrate, com.ragemasta.bootstrap, com.saurik.substrate (<< 1:0)
+Breaks: uikittools (<< 1.1.1), com.mywi4 (<= 5.03.2), com.phoenix.pandoracontrols (<= 1.1.0-1), com.intelliborn.intelliscreenx (<= 1.0.110), com.evad3rs.evasi0n7 (<< 0.2)
+Replaces: cycript (<= 0.9.594), com.saurik.substrate
+Filename: ./debs/mobilesubstrate_0.9.7107_iphoneos-arm.deb
+Size: 2530094
+MD5sum: 46ba5cb41c264183293689da51e463ef
+SHA1: 5082ea94469b0c39a158534254d24c94c3f46bf5
+SHA256: a03d3253187d151fbdfa5df3a10830a35ec4fb71e0fa4fdf1fc2fedde20dc4c9
+Section: System
+Priority: optional
+Description: powerful code insertion platform
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/mobilesubstrate/
+Name: Cydia Substrate
+
 Package: mterminal
 Version: 1.4-6
 Architecture: iphoneos-arm
@@ -8306,6 +8517,23 @@ Section: Networking
 Priority: standard
 Description: analyze and scan remote network hosts
 Name: Nmap
+
+Package: nodejs
+Version: 12.17.0-1
+Architecture: iphoneos-arm
+Maintainer: Mac C. <MCApollo@protonmail.com>
+Installed-Size: 108544
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libc-ares2, libnghttp2-14, libssl1.1.1
+Filename: ./debs/nodejs_12.17.0-1_iphoneos-arm.deb
+Size: 8248678
+MD5sum: a9c8160f103025808f9ec8c11fe32996
+SHA1: 9a33f0acf37cb4e1938d1c3773faa56533503d89
+SHA256: cd8eff81563a25535188f69d1c021eb166311d2ca7f9ab162d6cf07981e61206
+Section: Scripting
+Priority: optional
+Description: Platform built on V8 to build network applications
+Name: Node
 
 Package: nodejs
 Version: 12.3.1-1
@@ -8742,6 +8970,21 @@ SHA256: 83c722e8cdaacf67dea96cfc85da6bf4011d27e56c0d6a17b47717b39855c221
 Section: Development
 Priority: required
 Multi-Arch: foreign
+Description: Perl-compatible regular expressions
+
+Package: pcre2
+Version: 10.35-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 2136
+Pre-Depends: dpkg (>= 1.14.25-8)
+Filename: ./debs/pcre2_10.35-1_iphoneos-arm.deb
+Size: 242794
+MD5sum: 6acbc5f3f3e6e0fd1371ab4bf0057e79
+SHA1: 0f498cb5703be4e76db78e695769a41f1f6f682b
+SHA256: 8f8ce2fd3481f11d8e4741d6e71149392a424bace6c7aaae2da2349fa007cd95
+Section: Development
+Priority: required
 Description: Perl-compatible regular expressions
 
 Package: perl
@@ -10047,6 +10290,22 @@ Priority: important
 Multi-Arch: foreign
 Description: at-a-glance process watching tool
 
+Package: top
+Version: 39-2
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Installed-Size: 456
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: ncurses
+Filename: ./debs/top_39-2_iphoneos-arm.deb
+Size: 60866
+MD5sum: 38db275007a331e7ff8899ea22261dc7
+SHA1: dd96e73245b500223fe187e6144625b5da7da5da
+SHA256: bc7dbe5057579b29b1e5759b29bc892323188d29f92d15f7576b008d7c009bf9
+Section: Administration
+Priority: important
+Description: at-a-glance process watching tool
+
 Package: transmission
 Version: 2.94-1
 Architecture: iphoneos-arm
@@ -10541,6 +10800,22 @@ Size: 199810
 MD5sum: 94d0f5858b02330e081707db5c9937df
 SHA1: 4e7672da7e35b086e060ecda0115c41441b105e9
 SHA256: 88ee4c12066b093ed9f103352108afe7b63b88f3c6978e39034f0cccd500786a
+Section: Networking
+Priority: important
+Description: simple HTTP file transfer client
+
+Package: wget
+Version: 1.20.3-1
+Architecture: iphoneos-arm
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Installed-Size: 1112
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: gettext, libssl1.1.1, pcre2
+Filename: ./debs/wget_1.20.3-1_iphoneos-arm.deb
+Size: 207826
+MD5sum: f08b25a4537da5b6533df4fb20fc0aef
+SHA1: 105743ac82832ea72fde86b9962dd98916fbd962
+SHA256: d3a29f21ea8d48129169e8fb4d64a2460ea1ff9dcab58eaa6b699b6e15360df3
 Section: Networking
 Priority: important
 Description: simple HTTP file transfer client
