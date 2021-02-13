@@ -11650,3 +11650,33 @@ Priority: optional
 Description: a shell with interactive features
 Name: Z Shell
 
+Package: openssh
+Priority: important
+Section: Networking
+Installed-Size: 10680
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Architecture: iphoneos-arm
+Version: 8.3-1
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.1.1
+Description: secure remote access between machines
+Name: OpenSSH
+Depiction: http://cydia.saurik.com/info/openssh/
+Size: 705064
+MD5sum: 65a335b031055f97a122b90ff8a04664
+Filename: ./debs/openssh_8.3-1_iphoneos-arm.deb
+
+Package: openssl
+Priority: standard
+Section: Security
+Installed-Size: 1432
+Maintainer: Sam Bingner <maintainer@sbdhi.com>
+Architecture: iphoneos-arm
+Version: 1.1.1d-1
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libssl1.1.1, firmware (>=11.0) | libssl0.9.8, libssl1.0
+Description: OpenSSL tools
+Name: OpenSSL
+Size: 225350
+MD5sum: eb228d5d4aec293f446ae8b97a2351b1
+Filename: ./debs/openssl_1.1.1d-1_iphoneos-arm.deb
